@@ -1,0 +1,25 @@
+
+<div class="container">
+    <table class="table table-hover">
+  <thead>
+    <tr>
+        <th scope="col">No.</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Place</th>
+      <th scope="col">Prize</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each product}}
+    <tr>
+      <th scope="row">{{no}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.description}}</td>
+      <td>{{this.place}}</td>
+      <td>{{this.prize}}</td>
+    </tr> 
+    {{/each}}  
+  </tbody>
+</table>
+</div>
